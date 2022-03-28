@@ -32,13 +32,13 @@ namespace GradeBook.GradeBooks
                     l++;
                 }
             }
-            if (l< (int)Math.Ceiling(Students.Count * 0.20))
+            if (l<= (int)Math.Ceiling(Students.Count * 0.20))
                 return 'F';
-            else if (l< (int)Math.Ceiling(Students.Count * 0.40))
+            else if (l<= (int)Math.Ceiling(Students.Count * 0.40))
                 return 'D';
-            else if (l < (int)Math.Ceiling(Students.Count * 0.60))
+            else if (l <= (int)Math.Ceiling(Students.Count * 0.60))
                 return 'C';
-            else if (l < (int)Math.Ceiling(Students.Count * 0.80))
+            else if (l <= (int)Math.Ceiling(Students.Count * 0.80))
                 return 'B';
             else
                 return 'A';
